@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap');
+
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    20% { transform: translate(-5px, 0); }
+    40% { transform: translate(5px, 0); }
+    60% { transform: translate(-5px, 0); }
+    80% { transform: translate(5px, 0); }
+    100% { transform: translate(0, 0); }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #424769;
+    padding: 20px;
+}
+
+header h1{
+    color: white;
+    text-align: center;
+    font-family: Asap,sans-serif;
+}
+
+body{
+    background-color: #2D3250
+    
+}
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+#comp-icon{
+    display: flex;
+    margin-left:auto ;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+.score-board{
+    border-radius: 15px;
+    margin: 20px auto;
+    border: 3px solid white;
+    text-align: center;
+    color: white;
+    width: 200px;
+    font-size: 40px;
+    padding: 15px 20px; 
+    font-family: Asap,sans-serif;
+    position: relative;
+    font-weight: bold;
+}
+.comp-label{
+    align-items: center;    
+}
+
+.user-label > p{
+    color: white;
+    font-size: 20px;
+    font-family: Asap,sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.comp-label > p{
+    color: white;
+    font-size: 20px;
+    font-family: Asap,sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#user-score{
+    margin-right: 10px;
+}
+#comp-score{
+    margin-left: 10px;
+}
+
+#user-label{
+    position: absolute;
+    top: 30px;
+    left: -25px;
+}
+
+#comp-label{
+    position: absolute;
+    top: 30px;
+    right: -25px;
+}
+
+.result{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Asap,sans-serif;    
+}
+
+.result p{
+    text-align: center;
+}
+
+.choice{
+    border-radius: 35px;
+}
+#rock{
+    margin-right: 5%;
+}
+
+#paper{
+margin-right: 5%;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.choice:hover{
+    border-radius: 35px;
+    animation: shake 0.5s ease;
+}
+
+
+.command{
+    margin-top: 30px;
+    color: white;
+    font-size: 25px;
+    font-family: Asap,sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.general_scoreb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.icons{
+    width: 80px;
+}
+.container {
+    
+    width: 60px; /* Set the desired width of the container */
+    height: 60px; /* Set the desired height of the container */
+    overflow: hidden; /* Hide any part of the image that exceeds the container */
+    border-radius: 50%;    
+}
+.container > p{
+    color: white;
+}
+
+.container img {
+    width: 100%; /* Make the image fill the width of its container */
+    height: 100%; /* Make the image fill the height of its container */
+    object-fit: cover; /* Resize the image while preserving its aspect ratio to cover the entire container */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
